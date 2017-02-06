@@ -6,6 +6,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,9 +18,6 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-		<!-- other scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		<!--Custom css and js -->
 		<script type="text/javascript" src="assets/my_script.js"></script>
@@ -60,27 +60,27 @@
 
 		<div class="container-fluid">
 			<!-- header img -->
-			<img class="img-responsive mainImage" src="assets/banner_text.jpg" id="mainImage">
+			<!-- <img class="img-responsive mainImage" src="assets/banner_text.jpg" id="mainImage"> -->
 
-			<!-- page content -->
+			<!-- visible thumbnails -->
 			<div class="row images" id="Costumes">
 				<div class="col-lg-12">
 					<h2>Costumes</h2>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/elsa.jpg" title="Elsa">
-					</div>
+				    <a title="Elsa" href="#">
+						<img class="thumb img-responsive" id="elsa" src="assets/thumbs/elsa.jpg">
+					</a>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/merida.jpg" title="Merida">
-					</div>
+					<a title="Merida" href="#">
+						<img class="thumb img-responsive" id="merida" src="assets/thumbs/merida.jpg">
+					</a>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/slytherin.jpg" title="Slytherin">
-					</div>
+					<a title="Slytherin Robe" href="#">
+						<img class="thumb img-responsive" id="slytherin" src="assets/thumbs/slytherin.jpg">
+					</a>
 				</div>
 			</div>
 
@@ -89,9 +89,9 @@
 					<h2>Props</h2>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/bow.jpg" title="Merida's Bow">
-					</div>
+					<a title="Merida's Bow" href="#">
+						<img class="thumb img-responsive" id="bow" src="assets/thumbs/bow.jpg">
+					</a>
 				</div>
 			</div>
 
@@ -100,30 +100,118 @@
 					<h2>Other</h2>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/hobbes.jpg" title="Hobbes">
-					</div>
+					<a title="Hobbes" href="#"> 
+						<img class="thumb img-responsive" id="hobbes" src="assets/thumbs/hobbes.jpg">
+					</a>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/pooh.jpg" title="Winnie the Pooh">
-					</div>
+					<a title="Winnie the Pooh" href="#">
+						<img class="thumb img-responsive" id="pooh" src="assets/thumbs/pooh.jpg">
+					</a>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/tigger.jpg" title="Tigger">
-					</div>
+					<a title="Tigger" href="#">
+						<img class="thumb img-responsive" id="tigger" src="assets/thumbs/tigger.jpg">
+					</a>
 				</div>
 				<div class="col-lg-2 col-md-3 col-xs-4">
-					<div class="thumb">
-						<img class="img-responsive" src="assets/thumbs/dog.jpg" title = "Dog Coat">
+					<a title = "Dog Coat" href="#">
+						<img class="thumb img-responsive" id="dog" src="assets/thumbs/dog.jpg">
+					</a>
+				</div>				
+			</div>
+
+			<!-- hidden images -->
+			<div class="hidden" id="img-repo">
+			<!-- Costumes -->
+				<!-- Elsa -->
+					<div class="item" id="elsa">
+						<img class="thumbnail img-responsive" title="Elsa Front" src="assets/fullsize/Costumes/elsa1.jpg">
+					</div>
+					<div class="item" id="elsa">
+						<img class="thumbnail img-responsive" title="Elsa Back" src="assets/fullsize/Costumes/elsa2.jpg">
+					</div>
+					<div class="item" id="elsa">
+						<img class="thumbnail img-responsive" title="Elsa Front Detail" src="assets/fullsize/Costumes/elsa_detail1.jpg">
+					</div>
+					<div class="item" id="elsa">
+						<img class="thumbnail img-responsive" title="Elsa Skirt Detail" src="assets/fullsize/Costumes/elsa_detail2.jpg">
+					</div>
+				<!-- Merida -->
+					<div class="item" id="merida">
+						<img class="thumbnail img-responsive" title="Merida Front" src="assets/fullsize/Costumes/merida1.jpg">
+					</div>
+					<div class="item" id="merida">
+						<img class="thumbnail img-responsive" title="Merida Back" src="assets/fullsize/Costumes/merida2.jpg">
+					</div>
+					<div class="item" id="merida">
+						<img class="thumbnail img-responsive" title="Merida Front Detail" src="assets/fullsize/Costumes/merida_close.jpg">
+					</div>
+				<!-- SLytherin Robes -->
+					<div class="item" id="slytherin">
+						<img class="thumbnail img-responsive" title="Slytherin Robe Front" src="assets/fullsize/Costumes/slytherin1.jpg">
+					</div>
+					<div class="item" id="slytherin">
+						<img class="thumbnail img-responsive" title="Slytherin Robe Back" src="assets/fullsize/Costumes/slytherin2.jpg">
+					</div>
+			<!-- Props -->
+				<!-- Merida's Bow -->
+					<div class="item" id="bow">
+						<img class="thumbnail img-responsive" title="Merida's Bow" src="assets/fullsize/Props/merida_bow1.jpg">
+					</div>
+					<div class="item" id="bow">
+						<img class="thumbnail img-responsive" title="Merida's Bow" src="assets/fullsize/Props/merida_bow2.jpg">
+					</div>
+					<div class="item" id="bow">
+						<img class="thumbnail img-responsive" title="Merida's Bow - Handle Detail" src="assets/fullsize/Props/merida_bow3.jpg">
+					</div>
+					<div class="item" id="bow">
+						<img class="thumbnail img-responsive" title="Merida's Bow - Painting Detail" src="assets/fullsize/Props/merida_bow4.jpg">
+					</div>
+			<!-- Other -->
+				<!-- Hobbes -->
+					<div class="item" id="hobbes">
+						<img class="thumbnail img-responsive" title="Hobbes Plush Front" src="assets/fullsize/Other/hobbes.jpg">
+					</div>
+					<div class="item" id="hobbes">
+						<img class="thumbnail img-responsive" title="Hobbes Plush Back" src="assets/fullsize/Other/hobbes2.jpg">
+					</div>
+				<!-- Pooh crossstitch -->
+					<div class="item" id="pooh">
+						<img class="thumbnail img-responsive" title="Winnie the Pooh Crossstitch" src="assets/fullsize/Other/pooh.jpg">
+					</div>
+				<!-- Tigger crossstitch -->
+					<div class="item" id="tigger">
+						<img class="thumbnail img-responsive" title="Tigger Crossstitch" src="assets/fullsize/Other/tigger.jpg">
+					</div>
+				<!-- Dog coat -->
+					<div class="item" id="dog">
+						<img class="thumbnail img-responsive" title="Dog Coat Flat" src="assets/fullsize/Other/dog1.jpg">
+					</div>
+					<div class="item" id="dog">
+						<img class="thumbnail img-responsive" title="Dog Coat Worn" src="assets/fullsize/Other/dog2.jpg">
+					</div>
+			</div>
+
+			<!-- modal gallery -->
+			<div class="modal" id="modal-gallery" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal">×</button>
+							<h3 class="modal-title"></h3>
+						</div>
+						<div class="modal-body">
+							<div id="modal-carousel" class="carousel">
+								<div class="carousel-inner">           
+								</div>
+								<a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+								<a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<br>
-			<br>
-			<br>
 
 			<!-- Footer -->
 	        <footer>
@@ -135,10 +223,6 @@
 	        </footer>	
 		</div>
 	</body>
-
-
-
-
 
 </html>
 
