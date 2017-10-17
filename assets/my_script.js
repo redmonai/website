@@ -17,9 +17,11 @@ $(document).ready(function() {
    $(".row .thumb").click(function(){
     var content = $(".carousel-inner");
     var title = $(".modal-title");
-  
+    var desc = $(".modal-desc");
+
     content.empty();  
     title.empty();
+    desc.empty();
   
   	var id = this.id;  
      var repo = $("#img-repo .item");
@@ -28,6 +30,7 @@ $(document).ready(function() {
   
     active.addClass("active");
     title.html(active.find("img").attr("title"));
+    desc.html(active.find("img").attr("description"));
   	content.append(repoCopy);
 
     // show the modal
