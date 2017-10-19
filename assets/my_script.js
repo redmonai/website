@@ -6,11 +6,19 @@ $(document).ready(function() {
    $("#modal-carousel").carousel({interval:false});
 
    /* change modal title when slide changes */
-   $("#modal-carousel").on("slid.bs.carousel",       function () {
+   $("#modal-carousel").on("slid.bs.carousel", function () {
         $(".modal-title")
         .html($(this)
         .find(".active img")
         .attr("title"));
+   });
+
+   /* change modal decription when slide changes */
+   $("#modal-carousel").on("slid.bs.carousel", function () {
+        $(".modal-desc")
+        .html($(this)
+        .find(".active img")
+        .attr("desc"));
    });
 
    /* when clicking a thumbnail */
