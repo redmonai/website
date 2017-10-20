@@ -46,3 +46,10 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+// $(".thumb").hover( function () {
+//     $(this).changeopacity //or whatever
+//     $("p"). Display
+// }, 
