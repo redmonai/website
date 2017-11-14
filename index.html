@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="assets/my_script.js"></script>
 		<link rel="stylesheet" href="assets/styles.css">
 
+		<!-- font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
 	</head>
 
 	<body>
@@ -37,7 +40,7 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="#mainImage">Ailbhe Redmond</a>  
+		            <a class="navbar-brand" href="#mainImage">AILBHE REDMOND</a>  
 		        </div>
 		    </div>
 		    <!-- /.container -->
@@ -67,30 +70,57 @@
 				<div class="row imagetiles">
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="rey" src="assets/thumbs/rey_square.jpg">
+						<div class="overlay">
+							<div id="rey" class="text">REY</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="bow" src="assets/thumbs/bow_square.jpg">
+						<div class="overlay">
+							<div id="bow" class = "text">BOW</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="elsa" src="assets/thumbs/elsa_square.jpg">
+						<div class="overlay">
+							<div id="elsa" class = "text">ELSA</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="hobbes" src="assets/thumbs/hobbes_square.jpg">
+						<div class="overlay">
+							<div id="hobbes" class = "text">HOBBES</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="merida" src="assets/thumbs/merida_square.jpg">
+						<div class="overlay">
+							<div id="merida" class = "text">MERIDA</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="dog" src="assets/thumbs/dog_square.jpg">
+						<div class="overlay">
+							<div id="dog" class = "text">DOG COAT</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="tigger" src="assets/thumbs/tigger_square.jpg">
+						<div class="overlay">
+							<div id="tigger" class = "text">TIGGER</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="slytherin" src="assets/thumbs/slytherin_square.jpg">
+						<div class="overlay">
+							<div id="slytherin" class = "text">SLYTHERIN<br>ROBE</div>
+						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
 						<img class="thumb" id="pooh" src="assets/thumbs/pooh_square.jpg">
+						<div class="overlay">
+							<div id="pooh" class = "text">POOH</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -138,7 +168,6 @@
 					<div class="item" id="slytherin">
 						<img class="thumbnail img-responsive" title="Slytherin Robe Back" src="assets/fullsize/slytherin2.jpg">
 					</div>
-			<!-- Props -->
 				<!-- Merida's Bow -->
 					<div class="item" id="bow">
 						<img class="thumbnail img-responsive" title="Merida's Bow" src="assets/fullsize/merida_bow1.jpg">
@@ -152,7 +181,6 @@
 					<div class="item" id="bow">
 						<img class="thumbnail img-responsive" title="Merida's Bow - Painting Detail" src="assets/fullsize/merida_bow4.jpg">
 					</div>
-			<!-- Other -->
 				<!-- Hobbes -->
 					<div class="item" id="hobbes">
 						<img class="thumbnail img-responsive" title="Hobbes Plush Front" src="assets/fullsize/hobbes.jpg">
@@ -178,11 +206,11 @@
 			</div>
 
 			<!-- modal gallery -->
-			<div class="modal" id="modal-gallery" role="dialog">
+			<div class="modal fade" id="modal-gallery" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button class="close" type="button" data-dismiss="modal">×</button>
+							<button class="close" type="button" data-dismiss="modal">&times;</button>
 							<h3 class="modal-title"></h3>
 						</div>
 						<div class="modal-body">
@@ -197,7 +225,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 	<!-- Footer -->

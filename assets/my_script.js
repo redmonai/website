@@ -22,7 +22,7 @@ $(document).ready(function() {
    });
 
    /* when clicking a thumbnail */
-   $(".row .thumb").click(function(){
+   $(".row .overlay .text").click(function(){
     var content = $(".carousel-inner");
     var title = $(".modal-title");
     var desc = $(".modal-desc");
@@ -32,10 +32,12 @@ $(document).ready(function() {
     desc.empty();
   
   	var id = this.id;  
-     var repo = $("#img-repo .item");
-     var repoCopy = repo.filter("#" + id).clone();
-     var active = repoCopy.first();
-  
+    var repo = $("#img-repo .item");
+    var repoCopy = repo.filter("#" + id).clone();
+    var active = repoCopy.first();
+    console.log(id + "\n" + "\n" + repo + "\n" + repoCopy + "\n" + active);
+
+
     active.addClass("active");
     title.html(active.find("img").attr("title"));
     desc.html(active.find("img").attr("description"));
