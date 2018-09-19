@@ -30,7 +30,7 @@
 
 	<body>
 		<!-- Navigation -->
-	    <nav class="navbar navbar-fixed-top" role="navigation" id="navbar">
+	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="navbar">
 		    <div class="container">
 		        <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
@@ -40,7 +40,13 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="#mainImage">AILBHE REDMOND</a>  
+		            <a class="navbar-brand" href="#mainImage">AILBHE REDMOND</a>    
+		        </div>
+		        <div class="collapse navbar-collapse navbar-right">
+      				<ul class="nav navbar-nav">
+      					<li><a href="index.html">Home</a></li>
+		        		<li><a href="pages/crafting.html">Crafting</a></li>
+		        	</ul>
 		        </div>
 		    </div>
 		    <!-- /.container -->
@@ -49,13 +55,11 @@
 	    <section class="introduction" id="top">
 	    	<div class="container">
 	    		<br>
-	    		<br>
-	    		<br>
-	        	<p>I love to create clothing, craft props, and more based on what I've seen in TV, movies, and books</p>
-	        	<p>I'm a final year Computer Science & Business student based in Dublin, Ireland</p>
+	    		<p>I'm a recent graduate of Computer Science and Business based in Dublin, Ireland</p>
+	    		<p>This website is home to both my development and crafting projects.</p>
+	    		<p>My coding projects focus on improving daily life, while my crafts aim to emulate what I've seen in TV, movies, and books</p>
 	        	<br>	
 	        	<p>
-	        		<a href="https://twitter.com/albuhay" title="Twitter"><img class="social" src="assets/icons/twitter.png"></a>
 	        		<a href="https://www.linkedin.com/in/ailbhe-redmond-273550ba/" title="LinkedIn"><img class="social" src="assets/icons/linkedin.svg"></a>
 	        		<a href="https://github.com/redmonai" title="GitHub"><img class="social" src="assets/icons/github.svg"></a>
 	        	</p>
@@ -64,145 +68,64 @@
 	      	</div>
 	    </section>
 
-		<div class="container">
-
-			<div class="body">
-				<div class="row imagetiles">
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="rey" src="assets/thumbs/rey_square.jpg">
-						<div class="overlay">
-							<div id="rey" class="text">REY</div>
+	    <section class="projects">
+	    	<div class="container">
+	    		<!-- FYP -->
+	    		<div class="row">
+		    		<div class="col-lg-6">
+		    			<img class="thumb" id="fyp" src="assets/projects/fyp_results.jpg" height=200>
+		    			<div class="overlay">
+							<div id="fyp" class = "text">Final Year Project</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="bow" src="assets/thumbs/bow_square.jpg">
-						<div class="overlay">
-							<div id="bow" class = "text">BOW</div>
+					<div class="col-lg-6">
+						<p id="projecttitle">Final Year Project</p>
+					    <p id="projectdesc">For my final year project, I created an Android app to improve access to gluten free foods. This included a searchable gluten free foods database, and an ingredient interpreter. <br> <br> Technologies used included Firebase and Google Text Recognition. <br> <br> The project received 93%.</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<!-- transport -->
+				<div class="row">
+		    		<div class="col-lg-6">
+		    			<img class="thumb" id="12ktrans" src="assets/projects/12k_north.jpg" height=200>
+		    			<div class="overlay">
+							<div id="12ktrans" class = "text">Transport App</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="elsa" src="assets/thumbs/elsa_square.jpg">
-						<div class="overlay">
-							<div id="elsa" class = "text">ELSA</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="hobbes" src="assets/thumbs/hobbes_square.jpg">
-						<div class="overlay">
-							<div id="hobbes" class = "text">HOBBES</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="merida" src="assets/thumbs/merida_square.jpg">
-						<div class="overlay">
-							<div id="merida" class = "text">MERIDA</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="dog" src="assets/thumbs/dog_square.jpg">
-						<div class="overlay">
-							<div id="dog" class = "text">DOG COAT</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="tigger" src="assets/thumbs/tigger_square.jpg">
-						<div class="overlay">
-							<div id="tigger" class = "text">TIGGER</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="slytherin" src="assets/thumbs/slytherin_square.jpg">
-						<div class="overlay">
-							<div id="slytherin" class = "text">SLYTHERIN<br>ROBE</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-xs-6">
-						<img class="thumb" id="pooh" src="assets/thumbs/pooh_square.jpg">
-						<div class="overlay">
-							<div id="pooh" class = "text">POOH</div>
-						</div>
+					<div class="col-lg-6">
+						<p id="projecttitle">Transport App</p>
+					    <p id="projectdesc">I created a Rails app to query both bus and Dart information for my most frequently used stops. The application is hosted via heroku. <br><br> Available to view <a href="https://transport12k.herokuapp.com">here. </p>
 					</div>
 				</div>
 			</div>
-
-						<!-- hidden images -->
+			
+			<!-- hidden images -->
 			<div class="hidden" id="img-repo">
-			<!-- Costumes -->
-				<!-- Rey -->
-					<div class="item" id="rey" description="Hello world">
-						<img class="thumbnail img-responsive" title="Rey Close" decription="hi" src="assets/fullsize/rey_worn2.jpg">
-					</div>
-					<div class="item" id="rey">
-						<img class="thumbnail img-responsive" title="Rey Stage" src="assets/fullsize/rey_worn1.jpg">
-					</div>
-				<!-- Elsa -->
-					<div class="item" id="elsa">
-						<img class="thumbnail img-responsive" title="Elsa Front" src="assets/fullsize/elsa1.jpg">
-					</div>
-					<div class="item" id="elsa">
-						<img class="thumbnail img-responsive" title="Elsa Back" src="assets/fullsize/elsa2.jpg">
-					</div>
-					<div class="item" id="elsa">
-						<img class="thumbnail img-responsive" title="Elsa Front Detail" src="assets/fullsize/elsa_detail1.jpg">
-					</div>
-					<div class="item" id="elsa">
-						<img class="thumbnail img-responsive" title="Elsa Skirt Detail" src="assets/fullsize/elsa_detail2.jpg">
-					</div>
-					<div class="item" id="elsa">
-						<img class="thumbnail img-responsive" title="Elsa Worn" src="assets/fullsize/elsa_worn2.jpg">
-					</div>
-				<!-- Merida -->
-					<div class="item" id="merida">
-						<img class="thumbnail img-responsive" title="Merida Front" src="assets/fullsize/merida1.jpg">
-					</div>
-					<div class="item" id="merida">
-						<img class="thumbnail img-responsive" title="Merida Back" src="assets/fullsize/merida2.jpg">
-					</div>
-					<div class="item" id="merida">
-						<img class="thumbnail img-responsive" title="Merida Front Detail" src="assets/fullsize/merida_close.jpg">
-					</div>
-				<!-- SLytherin Robes -->
-					<div class="item" id="slytherin">
-						<img class="thumbnail img-responsive" title="Slytherin Robe Front" src="assets/fullsize/slytherin1.jpg">
-					</div>
-					<div class="item" id="slytherin">
-						<img class="thumbnail img-responsive" title="Slytherin Robe Back" src="assets/fullsize/slytherin2.jpg">
-					</div>
-				<!-- Merida's Bow -->
-					<div class="item" id="bow">
-						<img class="thumbnail img-responsive" title="Merida's Bow" src="assets/fullsize/merida_bow1.jpg">
-					</div>
-					<div class="item" id="bow">
-						<img class="thumbnail img-responsive" title="Merida's Bow" src="assets/fullsize/merida_bow2.jpg">
-					</div>
-					<div class="item" id="bow">
-						<img class="thumbnail img-responsive" title="Merida's Bow - Handle Detail" src="assets/fullsize/merida_bow3.jpg">
-					</div>
-					<div class="item" id="bow">
-						<img class="thumbnail img-responsive" title="Merida's Bow - Painting Detail" src="assets/fullsize/merida_bow4.jpg">
-					</div>
-				<!-- Hobbes -->
-					<div class="item" id="hobbes">
-						<img class="thumbnail img-responsive" title="Hobbes Plush Front" src="assets/fullsize/hobbes.jpg">
-					</div>
-					<div class="item" id="hobbes">
-						<img class="thumbnail img-responsive" title="Hobbes Plush Back" src="assets/fullsize/hobbes2.jpg">
-					</div>
-				<!-- Pooh crossstitch -->
-					<div class="item" id="pooh">
-						<img class="thumbnail img-responsive" title="Winnie the Pooh Crossstitch" src="assets/fullsize/pooh.jpg">
-					</div>
-				<!-- Tigger crossstitch -->
-					<div class="item" id="tigger">
-						<img class="thumbnail img-responsive" title="Tigger Crossstitch" src="assets/fullsize/tigger.jpg">
-					</div>
-				<!-- Dog coat -->
-					<div class="item" id="dog">
-						<img class="thumbnail img-responsive" title="Dog Coat Flat" src="assets/fullsize/dog1.jpg">
-					</div>
-					<div class="item" id="dog">
-						<img class="thumbnail img-responsive" title="Dog Coat Worn" src="assets/fullsize/dog2.jpg">
-					</div>
+				<!-- FYP -->
+	    		<div class="item" id="fyp">
+					<img class="thumbnail img-responsive" title="Search Results" src="assets/projects/fyp_results.jpg">
+				</div>
+				<div class="item" id="fyp">
+					<img class="thumbnail img-responsive" title="Category View" src="assets/projects/fyp_categories.jpg">
+				</div>
+				<div class="item" id="fyp">
+					<img class="thumbnail img-responsive" title="Product Page" src="assets/projects/fyp_product.jpg">
+				</div>
+				<div class="item" id="fyp">
+					<img class="thumbnail img-responsive" title="Information Page" src="assets/projects/fyp_info.jpg">
+				</div>
+				<div class="item" id="fyp">
+					<img class="thumbnail img-responsive" title="Ingredient Scanner" src="assets/projects/fyp_scan.jpg">
+				</div>
+
+				<!-- 12KTransport -->
+				<div class="item" id="12ktrans">
+					<img class="thumbnail img-responsive" title="Northbound" src="assets/projects/12k_north.jpg">
+				</div>
+				<div class="item" id="12ktrans">
+					<img class="thumbnail img-responsive" title="Southbound" src="assets/projects/12k_south.jpg">
+				</div>
 			</div>
 
 			<!-- modal gallery -->
@@ -225,12 +148,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
+	    </section>
+
 
 	<!-- Footer -->
 	<footer>
 		<br>
-	    <p>&copy; Ailbhe Redmond 2017</p>
+	    <p>&copy; Ailbhe Redmond 2018</p>
 	    <a class="uparrow" href="#top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 	</footer>
 

@@ -1,4 +1,5 @@
-/*script source: https://codepen.io/webcane/pen/lHGJf?editors=0010 */
+// Projects gallery js
+/* script source: https://codepen.io/webcane/pen/lHGJf?editors=0010 */
 
 $(document).ready(function() {
         
@@ -48,10 +49,3 @@ $(document).ready(function() {
   });
 
 });
-
-
-
-// $(".thumb").hover( function () {
-//     $(this).changeopacity //or whatever
-//     $("p"). Display
-// }, 
