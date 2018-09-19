@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title> Ailbhe Redmond Sewing</title>
+		<title> Ailbhe Redmond Portfolio</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!--Custom css and js -->
 		<script type="text/javascript" src="assets/my_script.js"></script>
@@ -32,19 +32,18 @@
 		<!-- Navigation -->
 	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="navbar">
 		    <div class="container">
-		        <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		                <span class="sr-only">Toggle navigation</span>
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="#mainImage">AILBHE REDMOND</a>    
+		            <a class="navbar-brand" href="">AILBHE REDMOND</a>    
 		        </div>
 		        <div class="collapse navbar-collapse navbar-right">
       				<ul class="nav navbar-nav">
-      					<li><a href="index.html">Home</a></li>
+      					<li class="active"><a href="index.html">Home</a></li>
 		        		<li><a href="pages/crafting.html">Crafting</a></li>
 		        	</ul>
 		        </div>
@@ -52,8 +51,8 @@
 		    <!-- /.container -->
 	    </nav>
 
-	    <section class="introduction" id="top">
-	    	<div class="container">
+	    <section class="projects">
+	    	<div class="container" id="intro">
 	    		<br>
 	    		<p>I'm a recent graduate of Computer Science and Business based in Dublin, Ireland</p>
 	    		<p>This website is home to both my development and crafting projects.</p>
@@ -66,10 +65,7 @@
 	      		
 	        	<br>
 	      	</div>
-	    </section>
-
-	    <section class="projects">
-	    	<div class="container">
+	    	<div class="container" id="projects">
 	    		<!-- FYP -->
 	    		<div class="row">
 		    		<div class="col-lg-6">
@@ -156,7 +152,7 @@
 	<footer>
 		<br>
 	    <p>&copy; Ailbhe Redmond 2018</p>
-	    <a class="uparrow" href="#top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+	    <a class="uparrow" href="#intro"><i class="glyphicon glyphicon-chevron-up"></i></a>
 	</footer>
 
 	</body>
